@@ -1,0 +1,101 @@
+p {
+    text-align: justify;
+}
+
+.hebrew {
+    direction: rtl;
+}
+
+.main {
+    margin: 50px 0 50px 0;
+}
+
+h1.hebrew, h2.hebrew, h3.hebrew, h4.hebrew, h5.hebrew, h6.hebrew {
+    font-family: serif;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h1.hebrew {
+    text-align: center;
+    font-size: 72px;
+    margin-bottom: 25px;
+}
+
+h2.title.hebrew {
+    text-align: center;
+    font-size: 48px;
+    margin: 25px 0 25px 0;
+}
+
+h3.hebrew {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+h3.tehillim-number.hebrew {
+    margin-bottom: 5px;
+}
+
+.header-translation {
+    color: #afafaf;
+    font-size: 90%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-preface  {
+    color: #afafaf;
+    text-transform: uppercase;
+    text-align: justify;
+    font-size: 9px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 14px;
+}
+
+p.introduction {
+    text-align: justify;
+    font-family: serif;
+    font-size: 22px;
+    margin: 0 10px 10px 10px;
+    line-height: 30px;
+}
+
+.introduction .first-word {
+    font-weight: bold;
+    font-size: 140%;
+}
+
+.verses .first-word {
+    font-weight: bold;
+    font-size: 120%;
+    padding-left: 10px;
+}
+
+ol.verses {
+    direction: rtl;
+    font-size: 26px;
+    font-family: serif;
+    line-height: 32px;
+    counter-reset: num;
+    text-align: justify;
+}
+
+ol.verses li {
+    color: #404040;
+    list-style-type: none;
+    counter-increment: num;
+    line-height: 32px;
+    display: inline;
+}
+
+ol.verses li:before {
+    content: counter(num, hebrew);
+    font-size: 70%;
+    font-family: serif;
+    padding: 0px 0px 0 10px;
+}
